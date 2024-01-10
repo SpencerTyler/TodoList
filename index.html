@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>ToDo List</title>
+
+    <script src="clock.js" defer></script>
+    <script src="todolist.js" defer></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container">
+      <div class="clock">
+        00:00:00
+      </div>
+      <div class="todo">
+        <h2>ToDo List</h2>
+
+        <form class="add">
+          <input type="text" name="todoItem"/>
+          <button type="submit">Add</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

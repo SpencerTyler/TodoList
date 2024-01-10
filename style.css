@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+body {
+  margin: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  min-width: 500px;
+}
+
+.clock {
+  text-align: center;
+  font-size: 50px;
+}
