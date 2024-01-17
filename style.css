@@ -20,10 +20,42 @@ body {
 }
 
 .container {
-  min-width: 500px;
+  width: 500px;
 }
 
 .clock {
   text-align: center;
   font-size: 50px;
+}
+
+form.add {
+  display: flex;
+  gap: 12px
+}
+
+form.add input {
+  flex-grow: 1;
+}
+
+.todo .items {
+  margin-top: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo .items .item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.todo .items .item .title {
+  flex-grow: 1;
+}
+
+.todo .items .item .title.done {
+  color: gray;
+  text-decoration: line-through;
 }
